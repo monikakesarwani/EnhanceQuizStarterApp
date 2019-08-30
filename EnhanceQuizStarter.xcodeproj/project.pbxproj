@@ -7,29 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04845AAA21EE31E700AF8EFC /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04845AA921EE31E700AF8EFC /* Question.swift */; };
-		04845AAC21EE31F800AF8EFC /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04845AAB21EE31F800AF8EFC /* SoundManager.swift */; };
-		04845AAE21EE320900AF8EFC /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04845AAD21EE320900AF8EFC /* GameManager.swift */; };
 		972A72B12056F06C0059EF4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972A72B02056F06C0059EF4A /* AppDelegate.swift */; };
-		972A72B32056F06C0059EF4A /* viewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972A72B22056F06C0059EF4A /* viewController.swift */; };
+		972A72B32056F06C0059EF4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972A72B22056F06C0059EF4A /* ViewController.swift */; };
 		972A72B62056F06C0059EF4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 972A72B42056F06C0059EF4A /* Main.storyboard */; };
 		972A72B82056F06C0059EF4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 972A72B72056F06C0059EF4A /* Assets.xcassets */; };
 		972A72BB2056F06C0059EF4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 972A72B92056F06C0059EF4A /* LaunchScreen.storyboard */; };
-		972A72C32056F0E40059EF4A /* GameSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 972A72C22056F0E40059EF4A /* GameSound.wav */; };
+		C87414A421B808ED006D550D /* GameCorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = C87414A121B808ED006D550D /* GameCorrect.wav */; };
+		C87414A521B808ED006D550D /* GameSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = C87414A221B808ED006D550D /* GameSound.wav */; };
+		C87414A621B808ED006D550D /* GameIncorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = C87414A321B808ED006D550D /* GameIncorrect.wav */; };
+		C87414A821BC08F2006D550D /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87414A721BC08F2006D550D /* GameManager.swift */; };
+		C87414AC21BE16AA006D550D /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87414AB21BE16AA006D550D /* SoundManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04845AA921EE31E700AF8EFC /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		04845AAB21EE31F800AF8EFC /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
-		04845AAD21EE320900AF8EFC /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		972A72AD2056F06C0059EF4A /* EnhanceQuizStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnhanceQuizStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		972A72B02056F06C0059EF4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		972A72B22056F06C0059EF4A /* viewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewController.swift; sourceTree = "<group>"; };
+		972A72B22056F06C0059EF4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		972A72B52056F06C0059EF4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		972A72B72056F06C0059EF4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		972A72BA2056F06C0059EF4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		972A72BC2056F06C0059EF4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		972A72C22056F0E40059EF4A /* GameSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSound.wav; sourceTree = "<group>"; };
+		C87414A121B808ED006D550D /* GameCorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = GameCorrect.wav; path = Assets.xcassets/GameCorrect.wav; sourceTree = "<group>"; };
+		C87414A221B808ED006D550D /* GameSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = GameSound.wav; path = Assets.xcassets/GameSound.wav; sourceTree = "<group>"; };
+		C87414A321B808ED006D550D /* GameIncorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = GameIncorrect.wav; path = Assets.xcassets/GameIncorrect.wav; sourceTree = "<group>"; };
+		C87414A721BC08F2006D550D /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		C87414AB21BE16AA006D550D /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,16 +45,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04845AA821EE31D100AF8EFC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				04845AA921EE31E700AF8EFC /* Question.swift */,
-				04845AAB21EE31F800AF8EFC /* SoundManager.swift */,
-				04845AAD21EE320900AF8EFC /* GameManager.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		972A72A42056F06C0059EF4A = {
 			isa = PBXGroup;
 			children = (
@@ -73,13 +65,16 @@
 			isa = PBXGroup;
 			children = (
 				972A72B02056F06C0059EF4A /* AppDelegate.swift */,
-				04845AA821EE31D100AF8EFC /* Model */,
-				972A72B22056F06C0059EF4A /* viewController.swift */,
+				972A72B22056F06C0059EF4A /* ViewController.swift */,
+				C87414A721BC08F2006D550D /* GameManager.swift */,
+				C87414AB21BE16AA006D550D /* SoundManager.swift */,
 				972A72B42056F06C0059EF4A /* Main.storyboard */,
 				972A72B72056F06C0059EF4A /* Assets.xcassets */,
+				C87414A121B808ED006D550D /* GameCorrect.wav */,
+				C87414A321B808ED006D550D /* GameIncorrect.wav */,
+				C87414A221B808ED006D550D /* GameSound.wav */,
 				972A72B92056F06C0059EF4A /* LaunchScreen.storyboard */,
 				972A72BC2056F06C0059EF4A /* Info.plist */,
-				972A72C22056F0E40059EF4A /* GameSound.wav */,
 			);
 			path = EnhanceQuizStarter;
 			sourceTree = "<group>";
@@ -111,12 +106,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = kesarwani;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Treehouse;
 				TargetAttributes = {
 					972A72AC2056F06C0059EF4A = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -144,10 +138,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				972A72C32056F0E40059EF4A /* GameSound.wav in Resources */,
 				972A72BB2056F06C0059EF4A /* LaunchScreen.storyboard in Resources */,
 				972A72B82056F06C0059EF4A /* Assets.xcassets in Resources */,
 				972A72B62056F06C0059EF4A /* Main.storyboard in Resources */,
+				C87414A421B808ED006D550D /* GameCorrect.wav in Resources */,
+				C87414A621B808ED006D550D /* GameIncorrect.wav in Resources */,
+				C87414A521B808ED006D550D /* GameSound.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,11 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04845AAE21EE320900AF8EFC /* GameManager.swift in Sources */,
-				972A72B32056F06C0059EF4A /* viewController.swift in Sources */,
+				C87414A821BC08F2006D550D /* GameManager.swift in Sources */,
+				C87414AC21BE16AA006D550D /* SoundManager.swift in Sources */,
+				972A72B32056F06C0059EF4A /* ViewController.swift in Sources */,
 				972A72B12056F06C0059EF4A /* AppDelegate.swift in Sources */,
-				04845AAA21EE31E700AF8EFC /* Question.swift in Sources */,
-				04845AAC21EE31F800AF8EFC /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,12 +299,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YRNHR2UDXB;
+				DEVELOPMENT_TEAM = R9E84DX62H;
 				INFOPLIST_FILE = EnhanceQuizStarter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.anil.kesarwaniEnhanceQuizStarter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.EnhanceQuizStarter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -319,12 +314,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YRNHR2UDXB;
+				DEVELOPMENT_TEAM = R9E84DX62H;
 				INFOPLIST_FILE = EnhanceQuizStarter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.anil.kesarwaniEnhanceQuizStarter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.EnhanceQuizStarter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
