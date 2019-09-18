@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     var soundManager = SoundManager()
     
     
-   
+    
     var timer = Timer()
     
     // MARK: - Outlets
@@ -29,29 +29,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var answerStatuslabel: UILabel!
     @IBOutlet weak var timerlabel: UILabel!
     
-
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      soundManager.loadGameStartSound()
-      soundManager.loadAnswerSound()
-    soundManager.playGameStartSound()
+        soundManager.loadGameStartSound()
+        soundManager.loadAnswerSound()
+        soundManager.playGameStartSound()
         displayQuestion()
         runTimer()
         updateTimer()
-       
+        
     }
     
-   
+    
     // MARK: - Helpers
     
     func displayQuestion() {
         gameManager.questionsAsked += 1
         resetTimer()
-       
+        
         answerStatuslabel.text = ""
-       
+        
         
         playAgainButton.setTitle("Next Question", for: UIControlState.normal)
         trueButton.setTitleColor(UIColor.white, for: UIControlState.normal)
@@ -60,14 +60,14 @@ class ViewController: UIViewController {
         option4Button.setTitleColor(UIColor.white, for: UIControlState.normal)
         
         
-       gameManager.indexOfSelectedQuestion = gameManager.generateRandomNumber()
+        gameManager.indexOfSelectedQuestion = gameManager.generateRandomNumber()
         let questionDictionary = gameManager.trivia[gameManager.indexOfSelectedQuestion]
         questionField.text = questionDictionary.question
-       
+        
         trueButton.layer.cornerRadius = 5
         falseButton.layer.cornerRadius = 5
         option3Button.layer.cornerRadius = 5
-      option4Button.layer.cornerRadius = 5
+        option4Button.layer.cornerRadius = 5
         
         if questionDictionary.ansType == 2 {
             trueButton.setTitle(questionDictionary.option1, for: UIControlState.normal)
@@ -89,7 +89,7 @@ class ViewController: UIViewController {
         }
     }
     
-  
+    
     
     func displayScore() {
         // Hide the answer uttons
@@ -102,7 +102,7 @@ class ViewController: UIViewController {
         playAgainButton.setTitle("Play Again", for: UIControlState.normal)
         timerlabel.isHidden = true
         questionField.text = "Way to go!\nYou got \(gameManager.correctQuestions) out of \(gameManager.questionsAsked) correct!"
-    
+        
     }
     
     func nextRound() {
@@ -124,8 +124,8 @@ class ViewController: UIViewController {
     @IBAction func checkAnswer(_ sender: UIButton) {
         // Increment the questions asked counter
         let selectedQuestionDict = gameManager.trivia[gameManager.indexOfSelectedQuestion]
-    let correctAnswer = selectedQuestionDict.answer
-       
+        let correctAnswer = selectedQuestionDict.answer
+        
         highlightAnswer(sender)
         
         let isCorrectAnswer = gameManager.checkAnswerForQuestion(selectedQuestionDict: selectedQuestionDict, btnTitle: sender.currentTitle ?? "")
@@ -135,7 +135,7 @@ class ViewController: UIViewController {
             highlightAnswer(sender)
             answerStatuslabel.textColor = UIColor.green
             answerStatuslabel.text = "Correct!"
-
+            
         }else {
             let attrs1 = [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 15), NSAttributedStringKey.foregroundColor : UIColor.orange]
             
@@ -176,7 +176,7 @@ class ViewController: UIViewController {
             trueButton.setTitleColor(UIColor.lightText, for: UIControlState.normal)
         }
     }
-
+    
     
     // Helper functions for lighting round
     // The main countdown timer for the game
@@ -202,11 +202,11 @@ class ViewController: UIViewController {
     func resetTimer() {
         gameManager.gameRunTime = gameManager.staticPlayTime
     }
-
+    
     @IBAction func playAgain(_ sender: Any) {
         
         if playAgainButton.currentTitle == "Next Question"{
-          
+            
             nextRound()
             
             
